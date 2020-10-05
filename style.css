@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#all-welcome{
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+ 
+}
+#welcome-header{
+  
+}
+html{
+  font-size: 62.5%;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.ingr-wiki{
+  display: flex;
+  transition: background 0.3s ease-out;
+}
+.ingr-wiki:hover{
+  background-color: #c8ad90 ;
+}
+.ingr-wiki > p{
+  visibility: hidden;
+  font-size: 2rem;
+}
+.how-to{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.ingr-wiki:hover p{
+  visibility: visible;
+}
+#lyrics{
+  max-width: 150px;
+  text-align: center;
+  margin-right: 0;
+  margin-left: auto;
+  line-height: 2;
+}
+
+#nav-bar{
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  background-color: gray;
+  opacity: 0.5;
+  visibility: visible;
+  }
+.seperator{
+  color: red;
+  height: 2px;
+  position: absolute;
+}
+#welcome-image{
+  display: flex;
+  flex-direction: column;
+  background-color: #D0DEEC;
+  padding: 4px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 400px;
+}
+#welcome-section{
+  box-sizing: inherit;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+  background-image: linear-gradient(62deg, #D3D3D3 0%, 	#A9A9A9 100%);
+  margin: auto;
+  text-align: center;
+  overflow-y: hidden;
+}
+.recipe{
+  box-sizing: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: hidden;
+}
+#recipe-header{
+  text-align: center;
+  padding-top: 50px;
+}
+#taco-image{
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+#pig{
+    background-image: linear-gradient(62deg, #EECAB1 0%, 	#C67D43 100%);
+}
+#fish{
+    background-image: linear-gradient(62deg, #0b85a2 0%, 	#0CA4FF 100%);
+}
+#pibil{
+  background-image: linear-gradient(62deg, #A0522D 0%, #FF6347 100%);
+}
+/* Base Styles */
+h1{
+  font-size: 4rem;
+  display: block;
+}
+p{
+  font-size: 2.2rem;
+  display: block;
+}
+h3{
+  font-size: 2.8rem;
+  display: block;
+}
+li{
+  font-size: 2rem;
+  margin: 2rem;
+  display: block;
+  line-height: 1.5;
+  
+}
+a{
+  text-decoration: none;
+  color: black;
+
+}
+.nav-link{
+}
+.nav-link:hover {
+  transform: translateY(6px);
+  
+}
+@media (max-width: 576px){
+  html{
+    font-size: 55%;
+  }
+  #nav-bar{
+    visibility: hidden;
+  }
+  #lyrics{
+  max-width: 150px;
+  text-align: center;
+  margin-right: 0;
+  margin-left: auto;
+  line-height: 2;
+}
+  li{
+    width: 100%;
+  }
+}
+  @media (max-width: 768px){
+    html{
+      font-size: 60%;
+    } 
+}
+#lyrics{
+  max-width: 150px;
+  text-align: center;
+  margin-right: 0;
+  margin-left: auto;
+  line-height: 2;
+}
+#nav-list{
+  display: flex;
+}
+}
+@media (max-width: 992px){
+#nav-bar{
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  }
+  #nav-list{
+    display: flex;
+    list-style: none;
+  }
+  #welcome-section{
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+ 
+
+  #lyrics{
+  max-width: 200px;
+  text-align: center;
+  margin-right: 0;
+  margin-left: auto;
+  line-height: 2;
+}
